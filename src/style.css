@@ -1,0 +1,74 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    106.7deg,
+    rgb(245, 167, 191) -6.2%,
+    rgb(201, 218, 238) 46.4%,
+    rgb(164, 240, 229) 86.4%
+  );
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+form {
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 20px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+}
+.key-words {
+  border-radius: 50px;
+  padding: 10px;
+  border: 1px solid grey;
+  width: 80%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.submit-button {
+  border-radius: 50px;
+  margin-left: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: rgb(245, 167, 191);
+  border: none;
+  width: 140px;
+  padding: 14px 24px;
+}
+.birthday-wish {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: white;
+  border-left: 5px solid rgb(164, 240, 229);
+  box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+a {
+  font-weight: 500;
+  color: rgb(231, 105, 143);
+}
