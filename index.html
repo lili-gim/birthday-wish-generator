@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>AI Birthday Wish Generator</title>
   </head>
   <body>
@@ -13,10 +14,11 @@
         <h1>AI Birthday Wish Generator</h1>
       </header>
       <main>
-        <form class="form" id="form">
+        <form class="form" id="wish-form">
           <input
             type="text"
             class="key-words"
+            id="key-wish-words"
             placeholder="Enter the key words"
             autofocus
             required
