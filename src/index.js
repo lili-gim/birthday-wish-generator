@@ -17,7 +17,11 @@ function generateWish(event) {
     "you are the best at creating witty birthday wishes with the provided words";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log(generateWish);
+  let wishElement = document.querySelector("#wish");
+  wishElement.classList.remove("hidden");
+  wishElement.innerHTML = `
+    <div class="generating">⏳Generating a birtday wish...</div>
+  `;
 
   axios.get(apiUrl).then(showWish);
 }

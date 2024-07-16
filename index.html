@@ -11,29 +11,30 @@
   <body>
     <div class="container">
       <header>
-        <h1>AI Birthday Wish Generator</h1>
+        <h1>Birthday Wish Generator</h1>
       </header>
       <main>
-        <form class="form" id="wish-form">
-          <input
-            type="text"
-            class="key-words"
-            id="key-wish-words"
-            placeholder="Enter the key words"
-            autofocus
-            required
-            autocomplete="off"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
+        <div class="form-container">
+          <form class="form" id="wish-form">
+            <input
+              type="text"
+              class="key-words"
+              id="key-wish-words"
+              placeholder="Enter the words to be included in a wish"
+              autofocus
+              required
+              autocomplete="off"
+            />
+            <input type="submit" class="submit-button" value="Generate Wish" />
+          </form>
+          <div class="hint">e.g. Happiness, Health, Love etc.</div>
+        </div>
+        <div class="wish hidden" id="wish"></div>
       </main>
-
-      <div class="birthday-wish" id="wish">Birthday wish will be here</div>
 
       <footer>
         This AI project was coded by
-        <a href="https://github.com/lili-gim" target="_blank">Liliia Gimaeva</a
-        >, is
+        <a href="https://github.com/lili-gim" target="_blank">Lili Gim</a>, is
         <a
           href="https://github.com/lili-gim/birthday-wish-generator"
           target="_blank"

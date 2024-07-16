@@ -26,14 +26,18 @@ h1 {
 }
 
 form {
-  text-align: center;
-  padding: 30px;
+  display: flex;
+}
+
+.form-container {
+  padding: 20px;
   background-color: white;
   border-radius: 10px;
-  display: flex;
+
   margin-bottom: 20px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
 }
+
 .key-words {
   border-radius: 50px;
   padding: 10px;
@@ -43,23 +47,50 @@ form {
   line-height: 20px;
 }
 
+.hint {
+  font-size: 12px;
+  margin-top: 10px;
+  opacity: 0.6;
+}
+
 .submit-button {
   border-radius: 50px;
   margin-left: 10px;
   font-size: 16px;
   line-height: 20px;
-  background-color: rgb(245, 167, 191);
+  background-color: rgb(247, 127, 163);
   border: none;
   width: 140px;
-  padding: 14px 24px;
+  padding: 14px;
+  text-align: center;
+  color: white;
 }
-.birthday-wish {
+.wish {
   padding: 20px;
   font-size: 16px;
   line-height: 1.5;
   background-color: white;
   border-left: 5px solid rgb(164, 240, 229);
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+}
+
+.hidden {
+  display: none;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 
 footer {
